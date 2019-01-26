@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://scripts/main_room.gd" type="Script" id=1]
-[ext_resource path="res://sprites/quarto1-1.jpg" type="Texture" id=2]
-[ext_resource path="res://scripts/door.gd" type="Script" id=3]
+[ext_resource path="res://scripts/MainRoom.gd" type="Script" id=1]
+[ext_resource path="res://sprites/rooms/quarto1-1.jpg" type="Texture" id=2]
+[ext_resource path="res://scripts/Door.gd" type="Script" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 

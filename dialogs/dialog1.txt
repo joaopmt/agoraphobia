@@ -1,4 +1,0 @@
-This is a dialog!
-This is another line in the dialog...
-How are you doing?
-Nice, i gtg bye.

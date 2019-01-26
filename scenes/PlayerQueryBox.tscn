@@ -1,0 +1,78 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scripts/PlayerQueryBox.gd" type="Script" id=1]
+
+[node name="PlayerQueryBox" type="Polygon2D"]
+
+position = Vector2( 400, 16 )
+scale = Vector2( 1, 1 )
+polygon = PoolVector2Array( 560, 608, 464, 656, 816, 656, 816, 640, 816, 640, 816, 640, 816, 624, 816, 624, 816, 608 )
+uv = PoolVector2Array(  )
+color = Color( 0.165344, 0.165939, 0.167969, 1 )
+vertex_colors = PoolColorArray(  )
+offset = Vector2( 0, 0 )
+antialiased = false
+texture = null
+texture_offset = Vector2( 0, 0 )
+texture_scale = Vector2( 1, 1 )
+texture_rotation_degrees = 0.0
+invert_enable = false
+invert_border = 100.0
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="YesButton" type="Button" parent="." index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 574.0
+margin_top = 624.0
+margin_right = 662.0
+margin_bottom = 644.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Sim"
+flat = false
+align = 1
+
+[node name="NoButton" type="Button" parent="." index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 684.0
+margin_top = 624.0
+margin_right = 772.0
+margin_bottom = 644.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Não"
+flat = false
+align = 1
+
+[connection signal="button_down" from="YesButton" to="." method="_on_YesButton_button_down"]
+
+[connection signal="button_down" from="NoButton" to="." method="_on_NoButton_button_down"]
+
+

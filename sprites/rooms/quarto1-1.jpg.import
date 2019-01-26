@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/quarto1-1.jpg-bb6b07d08b0d73abb08009f90977981f.stex"
+path="res://.import/quarto1-1.jpg-c1acef5e5a29b1c04cf29bf1f99f9765.stex"
 
 [deps]
 
-source_file="res://sprites/quarto1-1.jpg"
-dest_files=[ "res://.import/quarto1-1.jpg-bb6b07d08b0d73abb08009f90977981f.stex" ]
+source_file="res://sprites/rooms/quarto1-1.jpg"
+dest_files=[ "res://.import/quarto1-1.jpg-c1acef5e5a29b1c04cf29bf1f99f9765.stex" ]
 
 [params]
 

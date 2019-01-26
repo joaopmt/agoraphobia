@@ -3,30 +3,45 @@ extends RichTextLabel
 export(String, FILE, "*.txt") var filepath
 var dialog = {}	
 var page = 0
+var player_query_char = "="
+var next_dialog = false
+
 
 signal done
+signal player_query_signal
 
 func _ready():
+	set_process(true)
 	var f = File.new()
 	f.open(filepath, 1)
 	while not f.eof_reached():
 		var line = f.get_line()
-		print(line)
 		dialog[page] = line
 		page += 1
 	f.close()
+	print(dialog)
 	set_bbcode(dialog[0])
-	page = 1
+	page = 0
 
 func _process(delta):
-	if Input.is_action_just_pressed("ui_accept"):
+	if Input.is_action_just_pressed("ui_accept") or next_dialog:
+		if next_dialog:
+			next_dialog = false
 		if get_visible_characters() > get_total_character_count():
-			if page < dialog.size()-1:
+			
+			if page < dialog.size() - 2:
+				print(page)
+				print(dialog.size())
 				page += 1
-				set_bbcode(dialog[page])
-				set_visible_characters(0)
+				if dialog[page][0] == "=":
+					emit_signal("player_query_signal")
+					set_process(false)
+				else:
+					set_bbcode(dialog[page])
+					set_visible_characters(0)
 			else:
 				emit_signal("done")
+				page += 1
 		else:
 			set_visible_characters(get_total_character_count())
 	pass

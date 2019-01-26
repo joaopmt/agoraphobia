@@ -1,11 +1,10 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://scripts/DialogBox.gd" type="Script" id=1]
-[ext_resource path="res://scripts/Dialog.gd" type="Script" id=2]
+[ext_resource path="res://scripts/DialogAndQueryBox.gd" type="Script" id=1]
+[ext_resource path="res://fonts/CaviarDynamicFont.tres" type="DynamicFont" id=2]
+[ext_resource path="res://scripts/Dialog.gd" type="Script" id=3]
 
-
-
-[node name="DialogBox" type="Polygon2D"]
+[node name="DialogAndQueryBox" type="Polygon2D" index="0"]
 
 polygon = PoolVector2Array( 64, 544, 64, 672, 64, 672, 1216, 672, 1216, 672, 1216, 544, 1216, 544, 64, 544 )
 uv = PoolVector2Array(  )
@@ -20,6 +19,7 @@ texture_rotation_degrees = 0.0
 invert_enable = false
 invert_border = 100.0
 script = ExtResource( 1 )
+_sections_unfolded = [ "Visibility" ]
 
 [node name="Dialog" type="RichTextLabel" parent="." index="0"]
 
@@ -28,7 +28,7 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 96.0
-margin_top = 576.0
+margin_top = 560.0
 margin_right = 1184.0
 margin_bottom = 640.0
 rect_pivot_offset = Vector2( 0, 0 )
@@ -37,6 +37,8 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+custom_fonts/normal_font = ExtResource( 2 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
 bbcode_enabled = false
 bbcode_text = ""
 visible_characters = -1
@@ -48,8 +50,9 @@ scroll_active = true
 scroll_following = false
 selection_enabled = false
 override_selected_font_color = false
-script = ExtResource( 2 )
-filepath = "res://dialogs/dialog1.txt"
+script = ExtResource( 3 )
+_sections_unfolded = [ "Theme", "custom_colors", "custom_fonts", "custom_styles" ]
+filepath = "res://dialogs/dialogteste.txt"
 
 [node name="Timer" type="Timer" parent="." index="1"]
 
@@ -59,6 +62,8 @@ one_shot = false
 autostart = true
 
 [connection signal="done" from="Dialog" to="." method="_on_Dialog_done"]
+
+[connection signal="player_query_signal" from="Dialog" to="." method="_on_Dialog_player_query_signal"]
 
 [connection signal="timeout" from="Timer" to="Dialog" method="_on_Timer_timeout"]
 
