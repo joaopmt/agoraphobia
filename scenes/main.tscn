@@ -1,5 +1,18 @@
-[gd_scene format=2]
+[gd_scene load_steps=3 format=2]
 
-[node name="main" type="Node"]
+[ext_resource path="res://scenes/main.gd" type="Script" id=1]
+[ext_resource path="res://scenes/player.tscn" type="PackedScene" id=2]
+
+[node name="main" type="Node" index="0"]
+
+script = ExtResource( 1 )
+
+[node name="Player" parent="." index="0" instance=ExtResource( 2 )]
+
+position = Vector2( 191.366, 491.784 )
+z_index = 1
+_sections_unfolded = [ "Transform", "Z Index" ]
+
+[node name="Rooms" type="Node2D" parent="." index="1"]
 
 
