@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/goku.png-b2e01e8fccf5844eb8480d42b7458137.stex"
+path="res://.import/1-2.png-0ea9e6498aa45564ba10b387448346c9.stex"
 
 [deps]
 
-source_file="res://sprites/Player/goku.png"
-dest_files=[ "res://.import/goku.png-b2e01e8fccf5844eb8480d42b7458137.stex" ]
+source_file="res://sprites/player/personagem principal/1-2.png"
+dest_files=[ "res://.import/1-2.png-0ea9e6498aa45564ba10b387448346c9.stex" ]
 
 [params]
 

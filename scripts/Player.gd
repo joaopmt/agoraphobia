@@ -20,15 +20,15 @@ func _process(delta):
 	
 	if Input.is_action_pressed("ui_right"):
 		speed.x = min(speed.x+ACCELERATION, MAX_SPEED)
-#		$animatedSprite.flip_h = false
-#		$animatedSprite.play("run")
+		$Anim.flip_h = false
+		$Anim.play("walk")
 	elif Input.is_action_pressed("ui_left"):
 		speed.x = max(speed.x-ACCELERATION, -MAX_SPEED)
-#		$animatedSprite.flip_h = true
-#		$animatedSprite.play("run")
+		$Anim.flip_h = true
+		$Anim.play("walk")
 	else:
 		not_running = true
-#		$animatedSprite.play("idle")
+		$Anim.play("idle")
 	
 	if not_running:
 		speed.x = lerp(speed.x, 0, FRICTION) # floor contact and not running -> apply friction
