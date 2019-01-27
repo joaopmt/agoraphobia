@@ -13,6 +13,10 @@ animations = [ {
 "loop": false,
 "name": "in",
 "speed": 6.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "out",
+"speed": 5.0
 } ]
-_sections_unfolded = [ "Resource" ]
 

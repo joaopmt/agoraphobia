@@ -3,6 +3,8 @@ extends Node
 var main_room = preload("res://scenes/main_room.tscn")
 var room_2 = preload("res://scenes/room_2.tscn")
 var room_3 = preload("res://scenes/room_3.tscn")
+var room_4 = preload("res://scenes/room_4.tscn")
+var room_5 = preload("res://scenes/room_5.tscn")
 var building = preload("res://scenes/building.tscn")
 var elevator_in_anim = preload("res://scenes/elevatorInAnim.tscn")
 
@@ -97,6 +99,12 @@ func load_room(room_key):
 		room_key = 2
 	elif room_key == 2:
 		new_room = room_3.instance()
+		rooms.add_child(new_room)
+	elif room_key == 3:
+		new_room = room_4.instance()
+		rooms.add_child(new_room)
+	elif room_key == 4:
+		new_room = room_5.instance()
 		rooms.add_child(new_room)
 		
 		
