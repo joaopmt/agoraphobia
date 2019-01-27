@@ -7,6 +7,7 @@ var player_query_char = "="
 var next_dialog = false
 var yes_was_pressed = false
 var no_was_pressed = false
+var is_done = false
 
 signal done
 signal player_query_signal
@@ -28,6 +29,8 @@ func _process(delta):
 		if next_dialog:
 			next_dialog = false
 		if get_visible_characters() > get_total_character_count():
+			if is_done:
+				emit_signal("done")
 			if page < dialog.size() - 1:				#TODO -2 MAY BE NEEDED
 				page += 1
 				if dialog[page][0] == "=":
@@ -39,17 +42,21 @@ func _process(delta):
 						aux = dialog[page].right(4)
 						yes_was_pressed = false
 						set_bbcode(aux)
+						if dialog[page][0] == '-':
+							is_done = true
 						page += 1
 					elif no_was_pressed:
 						page += 1
 						aux = dialog[page].right(4)
 						no_was_pressed = false
 						set_bbcode(aux)
+						if dialog[page][0] == '-':
+							is_done = true
 					else:
 						set_bbcode(dialog[page])
 					set_visible_characters(0)
 			else:
-				emit_signal("done")
+				is_done = true
 				page += 1
 		else:
 			set_visible_characters(get_total_character_count())

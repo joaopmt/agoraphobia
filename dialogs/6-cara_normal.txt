@@ -1,20 +1,18 @@
-﻿[Bate na porta]
-JOGADOR: Olá, eu gostaria de conversar um pouco.
+﻿...: Olá, eu gostaria de conversar um pouco.
 CARA NORMAL: Claro, entre!
-[entra na casa]
-JOGADOR: Nossa, você é bem normal.
+...: Nossa, você é bem normal.
 CARA NORMAL: Acredita que quase todo mundo diz isso? Bom, eu entendo, sou bem normal.
-CARA NORMAL: Tenho um emprego normal, numa casa normal, uso roupas normais, tenho uma esposa normal.
-JOGADOR: Me disseram que o importante é você ser feliz com o que tem.
+CARA NORMAL: Tenho um emprego normal, uma casa normal, uso roupas normais, tenho uma esposa normal.
+...: Me disseram que o importante é você ser feliz com o que tem.
 CARA NORMAL: Exatamente, você também é normal?
 =
-S - CARA NORMAL: Então estamos na mesma páginas, podemos ser amgiso, não, irmãos!
+S - CARA NORMAL: Então estamos na mesma páginas, podemos ser amgios, não, irmãos!
 N - CARA NORMAL: A normalidade é pra poucos, todo mundo parece ter muitos problemas e defeitos.
 CARA NORMAL: Eu sou normal desde muito pequeno. Minha mãe me comprava camisas brancas e jeans,
 CARA NORMAL: eu frequentei uma escola muito comum na cidade e fui para a faculdade para me tornar um cara normal.
-JOGADOR: Realmente muito interessante.
+...: Realmente muito interessante.
 CARA NORMAL: Sim... Opa! Olá, amor, como foi no dentista?
-CARA NORMAL: Ah, que bom, ainda bem que não era cárie. JOGADOR, você já conhece a minha esposa?
+CARA NORMAL: Ah, que bom, ainda bem que não era cárie. ..., você já conhece a minha esposa?
 =
 S - CARA NORMAL: Isso já nos poupa apresentações.
 N - CARA NORMAL: Essa é a Jennifer, meu raio de sol.
@@ -25,4 +23,4 @@ CARA NORMAL: Que? Sim, amor, vou convidá-lo. JOGADOR, você gostaria de ficar p
 S - CARA NORMAL: Ótimo, meu amor irá cozinhar algo maravilhoso para nós.
 N - CARA NORMAL: Ah, que pena. Espero que possamos remarcar para algum outro dia.
 [Ansiedade ataca]
-JOGADOR: Preciso ir, é urgente!
+...: Preciso ir, é urgente!
