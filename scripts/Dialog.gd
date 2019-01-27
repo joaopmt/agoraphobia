@@ -1,6 +1,6 @@
 extends RichTextLabel
 
-export(String, FILE, "*.txt") var filepath
+var filepath
 var dialog = {}	
 var page = 0
 var player_query_char = "="

@@ -6,7 +6,8 @@ var room_3 = preload("res://scenes/room_3.tscn")
 var room_4 = preload("res://scenes/room_4.tscn")
 var room_5 = preload("res://scenes/room_5.tscn")
 var building = preload("res://scenes/building.tscn")
-var elevator_in_anim = preload("res://scenes/elevatorInAnim.tscn")
+var elevator_in_anim_load = preload("res://scenes/elevatorInAnim.tscn")
+var elevator_out_anim_load = preload("res://scenes/elevatorOutAnim.tscn")
 
 onready var rooms = get_node("Rooms")
 onready var player = get_node("Player")
@@ -14,8 +15,12 @@ onready var player = get_node("Player")
 var room_key
 var y_in_building 
 var current_is_building
-var timer
-var elevator_anim
+var timer1
+var timer2
+var timer3
+var elevator_in_anim
+var elevator_out_anim
+
 
 func _ready():
 	room_key = 0
@@ -29,28 +34,37 @@ func _process(delta):
 	if current_is_building:
 		if Input.is_action_just_pressed("ui_up"):
 			if 960 < $Player.position.x and $Player.position.x < 1023:
-				timer = Timer.new()
-				timer.set_one_shot(true)
-				timer.set_wait_time(2)
-				timer.connect("timeout", self, "_on_Timer_timeout")
-				self.add_child(timer)
-				timer.start()
-				elevator_anim = elevator_in_anim.instance()
-				self.add_child(elevator_anim)
-				elevator_anim.position = Vector2(991.564209, $Player.position.y-10)
-				elevator_anim.play()
+				timer1 = Timer.new()
+				timer1.set_one_shot(true)
+				timer1.set_wait_time(1.4)
+				timer1.connect("timeout", self, "_on_Timer_timeout_1")
+				self.add_child(timer1)
+				timer1.start()
+				#entra elevador
+				elevator_in_anim = elevator_in_anim_load.instance()
+				self.add_child(elevator_in_anim)
+				elevator_in_anim.position = Vector2(991.564209, $Player.position.y-10)
+				elevator_in_anim.play("in")
+				
 				$Player.hide()
 				$Player.set_process(false)
 				$Player.position.y -= 140
 				room_key += 1
+				
 		elif Input.is_action_just_pressed("ui_down"):
 			if 960 < $Player.position.x and $Player.position.x < 1023:
-				timer = Timer.new()
-				timer.set_one_shot(true)
-				timer.set_wait_time(2)
-				timer.connect("timeout", self, "_on_Timer_timeout")
-				self.add_child(timer)
-				timer.start()
+				timer1 = Timer.new()
+				timer1.set_one_shot(true)
+				timer1.set_wait_time(1)
+				timer1.connect("timeout", self, "_on_Timer_timeout_1")
+				self.add_child(timer1)
+				timer1.start()
+				#entra elevador
+				elevator_in_anim = elevator_in_anim_load.instance()
+				self.add_child(elevator_in_anim)
+				elevator_in_anim.position = Vector2(991.564209, $Player.position.y-10)
+				elevator_in_anim.play("in")
+				
 				$Player.hide()
 				$Player.set_process(false)
 				$Player.position.y += 170
@@ -112,9 +126,36 @@ func delete_room():
 	var room = rooms.get_children()[0]
 	rooms.remove_child(room)
 	
-func _on_Timer_timeout():
+func _on_Timer_timeout_1():
+	print("aaaaaaaaaa")
+	timer2 = Timer.new()
+	timer2.set_one_shot(true)
+	timer2.set_wait_time(1)
+	timer2.connect("timeout", self, "_on_Timer_timeout_2")
+	self.add_child(timer2)
+	timer2.start()
+	self.remove_child(timer1)
+	self.remove_child(elevator_in_anim)
+	
+	
+func _on_Timer_timeout_2():
+	print("aaaaaaaaaa")
+	timer3 = Timer.new()
+	timer3.set_one_shot(true)
+	timer3.set_wait_time(0.8)
+	timer3.connect("timeout", self, "_on_Timer_timeout_3")
+	self.add_child(timer3)
+	timer3.start()
+	elevator_out_anim = elevator_out_anim_load.instance()
+	self.add_child(elevator_out_anim)
+	elevator_out_anim.position = Vector2(991.564209, $Player.position.y-10)
+	elevator_out_anim.play("out")
+	self.remove_child(timer2)
+	
+	
+func _on_Timer_timeout_3():
 	print("aaaaaaaaaa")
 	$Player.show()
 	$Player.set_process(true)
-	self.remove_child(timer)
-	self.remove_child(elevator_anim)
+	self.remove_child(timer3)
+	self.remove_child(elevator_out_anim)

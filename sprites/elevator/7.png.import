@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/7.jpg-0dee57e29cb4dbafb067a4a8bac919ed.stex"
+path="res://.import/7.png-4fc577619f873499c365b66a8682c633.stex"
 
 [deps]
 
-source_file="res://sprites/elevator/7.jpg"
-dest_files=[ "res://.import/7.jpg-0dee57e29cb4dbafb067a4a8bac919ed.stex" ]
+source_file="res://sprites/elevator/7.png"
+dest_files=[ "res://.import/7.png-4fc577619f873499c365b66a8682c633.stex" ]
 
 [params]
 

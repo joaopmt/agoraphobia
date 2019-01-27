@@ -4,7 +4,7 @@
 [ext_resource path="res://fonts/CaviarDynamicFont.tres" type="DynamicFont" id=2]
 [ext_resource path="res://scripts/Dialog.gd" type="Script" id=3]
 
-[node name="DialogAndQueryBox" type="Polygon2D" index="0"]
+[node name="DialogAndQueryBox" type="Polygon2D"]
 
 polygon = PoolVector2Array( 64, 544, 64, 672, 64, 672, 1216, 672, 1216, 672, 1216, 544, 1216, 544, 64, 544 )
 uv = PoolVector2Array(  )
@@ -52,7 +52,6 @@ selection_enabled = false
 override_selected_font_color = false
 script = ExtResource( 3 )
 _sections_unfolded = [ "Theme", "custom_colors", "custom_fonts", "custom_styles" ]
-filepath = "res://dialogs/3-fumante.txt"
 
 [node name="Timer" type="Timer" parent="." index="1"]
 
