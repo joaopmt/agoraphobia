@@ -5,7 +5,8 @@ var dialog = {}
 var page = 0
 var player_query_char = "="
 var next_dialog = false
-
+var yes_was_pressed = false
+var no_was_pressed = false
 
 signal done
 signal player_query_signal
@@ -28,7 +29,6 @@ func _process(delta):
 		if next_dialog:
 			next_dialog = false
 		if get_visible_characters() > get_total_character_count():
-			
 			if page < dialog.size() - 2:
 				print(page)
 				print(dialog.size())
@@ -37,6 +37,13 @@ func _process(delta):
 					emit_signal("player_query_signal")
 					set_process(false)
 				else:
+					if yes_was_pressed:
+						var aux = ''.split(dialog[page])[2]
+						yes_was_pressed = false
+					elif no_was_pressed:
+						page += 1
+						var aux = ''.split(dialog[page])[2]
+						no_was_pressed = false
 					set_bbcode(dialog[page])
 					set_visible_characters(0)
 			else:

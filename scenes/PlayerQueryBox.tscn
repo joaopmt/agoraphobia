@@ -5,7 +5,6 @@
 [node name="PlayerQueryBox" type="Polygon2D"]
 
 position = Vector2( 400, 16 )
-scale = Vector2( 1, 1 )
 polygon = PoolVector2Array( 560, 608, 464, 656, 816, 656, 816, 640, 816, 640, 816, 640, 816, 624, 816, 624, 816, 608 )
 uv = PoolVector2Array(  )
 color = Color( 0.165344, 0.165939, 0.167969, 1 )
