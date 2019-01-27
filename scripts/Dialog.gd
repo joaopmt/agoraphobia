@@ -20,7 +20,6 @@ func _ready():
 		dialog[page] = line
 		page += 1
 	f.close()
-	print(dialog)
 	set_bbcode(dialog[0])
 	page = 0
 
@@ -29,22 +28,25 @@ func _process(delta):
 		if next_dialog:
 			next_dialog = false
 		if get_visible_characters() > get_total_character_count():
-			if page < dialog.size() - 2:
-				print(page)
-				print(dialog.size())
+			if page < dialog.size() - 1:				#TODO -2 MAY BE NEEDED
 				page += 1
 				if dialog[page][0] == "=":
 					emit_signal("player_query_signal")
 					set_process(false)
 				else:
+					var aux
 					if yes_was_pressed:
-						var aux = ''.split(dialog[page])[2]
+						aux = dialog[page].right(4)
 						yes_was_pressed = false
+						set_bbcode(aux)
+						page += 1
 					elif no_was_pressed:
 						page += 1
-						var aux = ''.split(dialog[page])[2]
+						aux = dialog[page].right(4)
 						no_was_pressed = false
-					set_bbcode(dialog[page])
+						set_bbcode(aux)
+					else:
+						set_bbcode(dialog[page])
 					set_visible_characters(0)
 			else:
 				emit_signal("done")
