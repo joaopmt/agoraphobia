@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scripts/MainRoom.gd" type="Script" id=1]
+[ext_resource path="res://sprites/rooms/predio.jpg" type="Texture" id=2]
+
+[node name="Building" type="Node2D" index="0"]
+
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Background" type="Sprite" parent="." index="0"]
+
+position = Vector2( 641.361, 362.99 )
+scale = Vector2( 0.97152, 0.978818 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Offset" ]
+
+

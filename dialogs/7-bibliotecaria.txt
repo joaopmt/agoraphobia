@@ -4,22 +4,22 @@ JOGADOR: Estou a procura de uma boa conversa.
 [entra na casa]
 BIBLIOTECÁRIA: Tire os sapatos, rápido! Que cheiro é esse? Você esteve na casa daquele maluco do patinho de borracha?
 =
-S- BIBLIOTECÁRIA: Então, por favor, mantenha distância!
-N- BIBLIOTECÁRIA: Que curioso, o cheiro daquele rapaz está começando a empreguinar o prédio todo.
+S - BIBLIOTECÁRIA: Então, por favor, mantenha distância!
+N - BIBLIOTECÁRIA: Que curioso, o cheiro daquele rapaz está começando a empreguinar o prédio todo.
 BIBLIOTECÁRIA: Eu não suporto esses odores tanto quanto não suporto bagunça.
 BIBLIOTECÁRIA: Só de imaginar duas canetas desalinhadas já me dá calafrios, ou pessoas mastigando...
 BIBLIOTECÁRIA: ... que horror!
 BIBLIOTECÁRIA: Você é uma pessoa organizada?
 =
-S- BIBLIOTECÁRIA: Isso signfica que poderemos nos tornar amigos, porque acho que não há outras pessoas com bom senso nesse prédio além de nós.
-N- BIBLIOTECÁRIA: Então temo que esta seja a nossa última conversa.
+S - BIBLIOTECÁRIA: Isso signfica que poderemos nos tornar amigos, porque acho que não há outras pessoas com bom senso nesse prédio além de nós.
+N - BIBLIOTECÁRIA: Então temo que esta seja a nossa última conversa.
 BIBLIOTECÁRIA: Eu tenho muitas manias e gostos, das quais repudio qualquer um que não as obedeça.
 BIBLIOTECÁRIA: Só de imaginar os germes e bactérias espalhados pelo mundo fora do meu ambiente seguro.
 BIBLIOTECÁRIA: Ou aqueles insetos nojentos que rastejam e vão atrás da comida espalhada pela casa.
 BIBLIOTECÁRIA: Vamos! Vamos! Vamos! O que está fazendo? Você quer que eu chame a polícia?
 =
-S- BIBLIOTECÁRIA: Você deve ser um lunático! Não precisamos disso, apenas coloque os sapatos!
-N- BIBLIOTECÁRIA: Então, pelo amor de Deus, coloque os sapatos!
+S - BIBLIOTECÁRIA: Você deve ser um lunático! Não precisamos disso, apenas coloque os sapatos!
+N - BIBLIOTECÁRIA: Então, pelo amor de Deus, coloque os sapatos!
 BIBLIOTECÁRIA: Não dá, a dor de vê-los desordenados é muito maior do que imaginar a sujeira que é você os usando.
 BIBLIOTECÁRIA: Pensando bem, o melhor seria se você voltasse algum outro dia, acho que podemos nos dar bem.
 BIBLIOTECÁRIA: SAÍA DA MINHA CASA AGORA! SEU LUNÁTICO!

@@ -5,8 +5,8 @@ JOGADOR: Hey, eu vim aqui porque preciso conversar.
 JOGADOR: Que cheiro é esse?
 FUMANTE: Cigarro... te incomoda?
 =
-S- Não te culpo, eu mesmo não tenho amor por esse cheiro horrível.
-N- Nossa, é raro encontrar não fumantes que aceitem a fumaça.
+S - Não te culpo, eu mesmo não tenho amor por esse cheiro horrível.
+N - Nossa, é raro encontrar não fumantes que aceitem a fumaça.
 FUMANTE: Me explique, porque você tem que conversar?
 JOGADOR: Minha psicologa receitou, ela diz que eu tenho que sair mais e viver a minha vida.
 FUMANTE: Viver é importante, mas o que realmente importa é viver da maneira que te faz feliz e não do jeito que os outros dizem que você tem que viver.
@@ -15,8 +15,8 @@ FUMANTE: O que eles não aceitam é que fumar é o que me faz viver. Toda essa t
 FUMANTE: e esses tubos de nicotina me trouxeram calma pra conseguir lidar com os problemas com apenas o custo de adiantar a morte.
 FUMANTE: Me diga, você tem medo de morrer?
 =
-S- FUMANTE: Você é um deles, então... Bom, mas irei tentar te convercer.
-N- FUMANTE: Que maravilha! Alguém que me entende!
+S - FUMANTE: Você é um deles, então... Bom, mas irei tentar te convercer.
+N - FUMANTE: Que maravilha! Alguém que me entende!
 FUMANTE: Todos falam da morte com muito medo e terror. Buscam se convencer de que após ela haverá inúmeros paraísos, outras realidade...
 FUMANTE: ...ou apenas acreditam que irão vagar entre nós por toda eternidade.
 FUMANTE: Eu acho isso uma completa perda do nosso precioso e limitado tempo.
@@ -26,8 +26,8 @@ FUMANTE: Eu fumo, sou viciado neles, mas isso é o que quero para minha vida e n
 FUMANTE: Eu sou feliz porque faço o que me faz feliz...
 FUMANTE: Você é feliz?
 =
-S- FUMANTE: Ótimo, então não foque no que os outros dizem que você deve fazer e se concentre nas coisas que te fazem feliz.
-N- FUMANTE: Ninguém é feliz o tempo todo, isso é fato. Desejo que você encontre o seu caminho para a felicidade!
+S - FUMANTE: Ótimo, então não foque no que os outros dizem que você deve fazer e se concentre nas coisas que te fazem feliz.
+N - FUMANTE: Ninguém é feliz o tempo todo, isso é fato. Desejo que você encontre o seu caminho para a felicidade!
 [Ansiedade ataca]
 JOGADOR: Preciso ir!
 FUMANTE: Fique a vontade!

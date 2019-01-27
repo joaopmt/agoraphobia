@@ -3,13 +3,13 @@ MARZIA: Viu, está tudo bem. Como você se sente?
 JOGADOR: Exausto.
 MARZIA: Não, seu besta, to falando sobre o tratamento. Se sente melhor?
 =
-S- MARZIA: Viu, se você fizer isso mais vezes, irá ficar cada vez melhor até se curar.
-N- MARZIA: Bom, talvez você precise repetir esse processo mais vezes pra funcionar.
+S - MARZIA: Viu, se você fizer isso mais vezes, irá ficar cada vez melhor até se curar.
+N - MARZIA: Bom, talvez você precise repetir esse processo mais vezes pra funcionar.
 MARZIA: Independente dos resultados, fico feliz por você ter tentado.
 MARZIA: Mal vejo a hora de realizar o meu sonho de dar uma volta no parque de mãos dadas com você.
 MARZIA: Acha que iremos chegar lá algum dia?
 =
-S- MARZIA: Que maravilha! Estarei aguardando ansiosa.
-N- MARZIA: Espere completar o tratamento, eu acredito que iremos conseguir.
+S - MARZIA: Que maravilha! Estarei aguardando ansiosa.
+N - MARZIA: Espere completar o tratamento, eu acredito que iremos conseguir.
 MARZIA: Agora, deixe isso tudo de lado, vá tomar banho e venha comer.
 MARZIA: Fiz o seu prato prediléto, porque hoje você o mereceu.

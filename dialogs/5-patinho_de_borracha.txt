@@ -16,8 +16,8 @@ PATRICK: ... antes... antes... calma! Antes do acidente de carro...
 PATRICK: Erámos só nós dois na época, meu pai tinha nos abandonado quando soube que eu iria nascer.
 PATRICK: Você conhece o seu pai?
 =
-S- PATRICK: Que sorte a sua, espero que ele tenha sido uma ótima pessoa.
-N- PATRICK: Então você entende o que eu sinto.
+S - PATRICK: Que sorte a sua, espero que ele tenha sido uma ótima pessoa.
+N - PATRICK: Então você entende o que eu sinto.
 PATRICK: Depois da morte dela eu passei a morar com o meu pai,
 PATRICK: mas ele quase nunca estava em casa.
 PATRICK: Desta vez era apenas eu e o pato. Meu querido pato.
@@ -26,8 +26,8 @@ PATRICK: a nadar juntos, a tomar banho juntos, a dobrar a roupa juntos.
 PATRICK: Ele era o meu único e melhor amigo.
 PATRICK: Me promete uma coisa? Se você encontrar o Rodolfo, poderia trazer ele de volta, por favor.
 =
-S- PATRICK: Ah, ótimo! Muito obrigado, meu primeiro segundo amigo!
-N- PATRICK: Você é muito maldoso, saía da minha casa!
+S - PATRICK: Ah, ótimo! Muito obrigado, meu primeiro segundo amigo!
+N - PATRICK: Você é muito maldoso, saía da minha casa!
 [Crise de ansiedade ataca]
 PATRICK: Está tudo bem?
 JOGADOR: Eu preciso ir!
