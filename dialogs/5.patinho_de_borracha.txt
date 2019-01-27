@@ -1,0 +1,33 @@
+[Bate na porta]
+JOGADOR: Eu posso entrar para conversar?
+???: Se você não se incomodar com o cheiro.
+[Entra na casa]
+PATRICK: Hey, eu sou o Patrick, acho que já te vi algumas vezes na portaria.
+JOGADOR: Eu não costumo ir lá muitas vezes.
+PATRICK: É, eu também... pelo menos costumava antes do meu problema.
+PATRICK: Perdi o patinho de borracha que a minha mãe me deu quando pequeno e sem ele não consigo tomar banho...
+PATRICK: Por acaso você não o viu em algum lugar?
+=
+S - PATRICK: Eu sei que você só está tentando me animar, mas por favor, nunca minta para os outros de novo.
+N - PATRICK: Que pena, quando você apareceu eu tinha a esperança de que você tinha o encontrado.
+PATRICK: Aquele patinho era especial, meu querido Rodolfo.
+PATRICK: Minha mãe me deu ele de presente quando eu tinha seis anos antes do... antes... do...
+PATRICK: ... antes... antes... calma! Antes do acidente de carro...
+PATRICK: Erámos só nós dois na época, meu pai tinha nos abandonado quando soube que eu iria nascer.
+PATRICK: Você conhece o seu pai?
+=
+S- PATRICK: Que sorte a sua, espero que ele tenha sido uma ótima pessoa.
+N- PATRICK: Então você entende o que eu sinto.
+PATRICK: Depois da morte dela eu passei a morar com o meu pai,
+PATRICK: mas ele quase nunca estava em casa.
+PATRICK: Desta vez era apenas eu e o pato. Meu querido pato.
+PATRICK: Nós aprendemos a ler juntos, a conversar juntos, a cozinhar juntos, a paquerar juntos,
+PATRICK: a nadar juntos, a tomar banho juntos, a dobrar a roupa juntos.
+PATRICK: Ele era o meu único e melhor amigo.
+PATRICK: Me promete uma coisa? Se você encontrar o Rodolfo, poderia trazer ele de volta, por favor.
+=
+S- PATRICK: Ah, ótimo! Muito obrigado, meu primeiro segundo amigo!
+N- PATRICK: Você é muito maldoso, saía da minha casa!
+[Crise de ansiedade ataca]
+PATRICK: Está tudo bem?
+JOGADOR: Eu preciso ir!
