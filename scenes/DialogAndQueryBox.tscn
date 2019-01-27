@@ -52,7 +52,7 @@ selection_enabled = false
 override_selected_font_color = false
 script = ExtResource( 3 )
 _sections_unfolded = [ "Theme", "custom_colors", "custom_fonts", "custom_styles" ]
-filepath = "res://dialogs/6-cara_normal.txt"
+filepath = "res://dialogs/3-fumante.txt"
 
 [node name="Timer" type="Timer" parent="." index="1"]
 

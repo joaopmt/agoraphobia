@@ -1,9 +1,7 @@
-[Bate na porta]
-JOGADOR: Eu posso entrar para conversar?
+﻿...: Eu posso entrar para conversar?
 ???: Se você não se incomodar com o cheiro.
-[Entra na casa]
 PATRICK: Hey, eu sou o Patrick, acho que já te vi algumas vezes na portaria.
-JOGADOR: Eu não costumo ir lá muitas vezes.
+...: Eu não costumo ir lá muitas vezes.
 PATRICK: É, eu também... pelo menos costumava antes do meu problema.
 PATRICK: Perdi o patinho de borracha que a minha mãe me deu quando pequeno e sem ele não consigo tomar banho...
 PATRICK: Por acaso você não o viu em algum lugar?

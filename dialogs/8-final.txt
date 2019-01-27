@@ -1,6 +1,5 @@
-[Volta pra casa]
-MARZIA: Viu, está tudo bem. Como você se sente?
-JOGADOR: Exausto.
+﻿MARZIA: Viu, está tudo bem. Como você se sente?
+...: Exausto.
 MARZIA: Não, seu besta, to falando sobre o tratamento. Se sente melhor?
 =
 S - MARZIA: Viu, se você fizer isso mais vezes, irá ficar cada vez melhor até se curar.

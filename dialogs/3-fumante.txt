@@ -1,14 +1,13 @@
-[Bate na porta]
-JOGADOR: Hey, eu vim aqui porque preciso conversar.
+﻿[Bate na porta]
+...: Hey, eu vim aqui porque preciso conversar.
 ???: Tudo bem, entre!
-[entra na casa]
-JOGADOR: Que cheiro é esse?
+...: Que cheiro é esse?
 FUMANTE: Cigarro... te incomoda?
 =
 S - Não te culpo, eu mesmo não tenho amor por esse cheiro horrível.
 N - Nossa, é raro encontrar não fumantes que aceitem a fumaça.
 FUMANTE: Me explique, porque você tem que conversar?
-JOGADOR: Minha psicologa receitou, ela diz que eu tenho que sair mais e viver a minha vida.
+...: Minha psicologa receitou, ela diz que eu tenho que sair mais e viver a minha vida.
 FUMANTE: Viver é importante, mas o que realmente importa é viver da maneira que te faz feliz e não do jeito que os outros dizem que você tem que viver.
 FUMANTE: Todos me dizem que por fumar irei morrer, que terei diversas doenças e que estou assinanto o meu contrato com a senhora Morte.
 FUMANTE: O que eles não aceitam é que fumar é o que me faz viver. Toda essa tensão que tenho do trabalho é muita pra eu lidar normalmente...
