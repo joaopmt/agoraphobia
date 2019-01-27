@@ -1,4 +1,4 @@
-[Bate na porta]
+﻿[Bate na porta]
 JOGADOR: Olá, eu gostaria de conversar um pouco.
 CARA NORMAL: Claro, entre!
 [entra na casa]
@@ -8,21 +8,21 @@ CARA NORMAL: Tenho um emprego normal, numa casa normal, uso roupas normais, tenh
 JOGADOR: Me disseram que o importante é você ser feliz com o que tem.
 CARA NORMAL: Exatamente, você também é normal?
 =
-S- CARA NORMAL: Então estamos na mesma páginas, podemos ser amgiso, não, irmãos!
-N- CARA NORMAL: A normalidade é pra poucos, todo mundo parece ter muitos problemas e defeitos.
+S - CARA NORMAL: Então estamos na mesma páginas, podemos ser amgiso, não, irmãos!
+N - CARA NORMAL: A normalidade é pra poucos, todo mundo parece ter muitos problemas e defeitos.
 CARA NORMAL: Eu sou normal desde muito pequeno. Minha mãe me comprava camisas brancas e jeans,
 CARA NORMAL: eu frequentei uma escola muito comum na cidade e fui para a faculdade para me tornar um cara normal.
 JOGADOR: Realmente muito interessante.
 CARA NORMAL: Sim... Opa! Olá, amor, como foi no dentista?
 CARA NORMAL: Ah, que bom, ainda bem que não era cárie. JOGADOR, você já conhece a minha esposa?
 =
-S- CARA NORMAL: Isso já nos poupa apresentações.
-N- CARA NORMAL: Essa é a Jennifer, meu raio de sol.
+S - CARA NORMAL: Isso já nos poupa apresentações.
+N - CARA NORMAL: Essa é a Jennifer, meu raio de sol.
 CARA NORMAL: Nos conhecemos na faculdade, eu lembro de vê-la caminhando pelo pátio olhando diretamente para mim...
 CARA NORMAL: ... foi amor a primeira vista. Quando eu contava dos nossos encontros e sobre as suas qualidades meus amigos diziam que ela nem existia de tão perfeita.
 CARA NORMAL: Que? Sim, amor, vou convidá-lo. JOGADOR, você gostaria de ficar para o jantar?
 =
-S- CARA NORMAL: Ótimo, meu amor irá cozinhar algo maravilhoso para nós.
-N- CARA NORMAL: Ah, que pena. Espero que possamos remarcar para algum outro dia.
+S - CARA NORMAL: Ótimo, meu amor irá cozinhar algo maravilhoso para nós.
+N - CARA NORMAL: Ah, que pena. Espero que possamos remarcar para algum outro dia.
 [Ansiedade ataca]
 JOGADOR: Preciso ir, é urgente!
