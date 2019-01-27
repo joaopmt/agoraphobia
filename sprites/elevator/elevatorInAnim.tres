@@ -1,0 +1,18 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=2]
+
+[ext_resource path="res://sprites/elevator/1.png" type="Texture" id=1]
+[ext_resource path="res://sprites/elevator/2.png" type="Texture" id=2]
+[ext_resource path="res://sprites/elevator/3.png" type="Texture" id=3]
+[ext_resource path="res://sprites/elevator/4.png" type="Texture" id=4]
+[ext_resource path="res://sprites/elevator/5.png" type="Texture" id=5]
+
+[resource]
+
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": false,
+"name": "in",
+"speed": 6.0
+} ]
+_sections_unfolded = [ "Resource" ]
+

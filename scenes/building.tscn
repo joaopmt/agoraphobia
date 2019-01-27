@@ -1,39 +1,6 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://scripts/MainRoom.gd" type="Script" id=1]
-[ext_resource path="res://sprites/rooms/predio.jpg" type="Texture" id=2]
-[ext_resource path="res://scenes/player.tscn" type="PackedScene" id=3]
-[ext_resource path="res://scenes/elevator.tscn" type="PackedScene" id=4]
-
-[sub_resource type="RectangleShape2D" id=1]
-
-custom_solver_bias = 0.0
-extents = Vector2( 112.865, 58.8744 )
-
-[sub_resource type="RectangleShape2D" id=2]
-
-custom_solver_bias = 0.0
-extents = Vector2( 329.647, 54.577 )
-
-[sub_resource type="RectangleShape2D" id=3]
-
-custom_solver_bias = 0.0
-extents = Vector2( 335.556, 60.3409 )
-
-[sub_resource type="RectangleShape2D" id=4]
-
-custom_solver_bias = 0.0
-extents = Vector2( 319.377, 61.8803 )
-
-[sub_resource type="RectangleShape2D" id=5]
-
-custom_solver_bias = 0.0
-extents = Vector2( 112.742, 60.5596 )
-
-[sub_resource type="RectangleShape2D" id=6]
-
-custom_solver_bias = 0.0
-extents = Vector2( 115.484, 61.6942 )
+[ext_resource path="res://sprites/rooms/predio.jpg" type="Texture" id=1]
 
 [sub_resource type="SegmentShape2D" id=7]
 
@@ -44,120 +11,24 @@ b = Vector2( 1128.5, -0.0362549 )
 [sub_resource type="SegmentShape2D" id=8]
 
 custom_solver_bias = 0.0
-a = Vector2( 0, 0 )
-b = Vector2( -1.33185, 710.079 )
+a = Vector2( -0.0844955, 54.7664 )
+b = Vector2( -0.499146, -713.083 )
 
-[node name="Building" type="Node2D" index="0"]
+[node name="Building" type="Node2D"]
 
-script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="Background" type="Sprite" parent="." index="0"]
 
 position = Vector2( 641.361, 362.99 )
 scale = Vector2( 0.97152, 0.978818 )
-texture = ExtResource( 2 )
+texture = ExtResource( 1 )
 _sections_unfolded = [ "Offset" ]
 
-[node name="Elevator1" type="Area2D" parent="." index="1"]
-
-position = Vector2( 994.339, 652.479 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Elevator1" index="0"]
-
-position = Vector2( -2.64062, -5.72156 )
-shape = SubResource( 1 )
-
-[node name="MainRoom" type="Area2D" parent="." index="2"]
-
-position = Vector2( 537.342, 647.686 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MainRoom" index="0"]
-
-shape = SubResource( 2 )
-
-[node name="Room2" type="Area2D" parent="." index="3"]
+[node name="Floor1" type="StaticBody2D" parent="." index="1"]
 
 editor/display_folded = true
-position = Vector2( 531.745, 491.533 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Room2" index="0"]
-
-shape = SubResource( 3 )
-
-[node name="Room3" type="Area2D" parent="." index="4"]
-
-editor/display_folded = true
-position = Vector2( 548.595, 328.411 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Room3" index="0"]
-
-shape = SubResource( 4 )
-
-[node name="Elevator2" type="Area2D" parent="." index="5"]
-
-editor/display_folded = true
-position = Vector2( 993.312, 492.966 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Elevator2" index="0"]
-
-shape = SubResource( 5 )
-
-[node name="Elevator3" type="Area2D" parent="." index="6"]
-
-editor/display_folded = true
-position = Vector2( 991.999, 329.108 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Elevator3" index="0"]
-
-shape = SubResource( 6 )
-
-[node name="Floor1" type="StaticBody2D" parent="." index="7"]
-
-editor/display_folded = true
-position = Vector2( -3.90923, 708.932 )
+position = Vector2( -8.42173, 712.542 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -170,10 +41,9 @@ bounce = 0.0
 
 shape = SubResource( 7 )
 
-[node name="Floor2" type="StaticBody2D" parent="." index="8"]
+[node name="Floor2" type="StaticBody2D" parent="." index="2"]
 
-editor/display_folded = true
-position = Vector2( -4.50297, 560.657 )
+position = Vector2( -4.50297, 561.56 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -184,9 +54,10 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2" index="0"]
 
+position = Vector2( -0.880211, -2.64081 )
 shape = SubResource( 7 )
 
-[node name="Floor3" type="StaticBody2D" parent="." index="9"]
+[node name="Floor3" type="StaticBody2D" parent="." index="3"]
 
 editor/display_folded = true
 position = Vector2( -5.48345, 400.365 )
@@ -202,16 +73,9 @@ bounce = 0.0
 
 shape = SubResource( 7 )
 
-[node name="Player" parent="." index="10" instance=ExtResource( 3 )]
+[node name="Floor4" type="StaticBody2D" parent="." index="4"]
 
-position = Vector2( 884.59, 657.013 )
-scale = Vector2( 0.4, 0.36 )
-_sections_unfolded = [ "Collision", "Transform", "Visibility", "collision" ]
-
-[node name="InvisibleWall" type="StaticBody2D" parent="." index="11"]
-
-editor/display_folded = true
-position = Vector2( 1114.29, 11.8031 )
+position = Vector2( -8.32576, 242.061 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -220,14 +84,13 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="StaticBody2D" type="CollisionShape2D" parent="InvisibleWall" index="0"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor4" index="0"]
 
-shape = SubResource( 8 )
+shape = SubResource( 7 )
 
-[node name="InvisibleWall2" type="StaticBody2D" parent="." index="12"]
+[node name="Floor5" type="StaticBody2D" parent="." index="5"]
 
-editor/display_folded = true
-position = Vector2( 176.82, 17.374 )
+position = Vector2( -6.77278, 83.1051 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -236,36 +99,46 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="StaticBody2D" type="CollisionShape2D" parent="InvisibleWall2" index="0"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor5" index="0"]
 
+shape = SubResource( 7 )
+
+[node name="InvisibleWall1" type="StaticBody2D" parent="." index="6"]
+
+position = Vector2( 1115.93, 687.172 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InvisibleWall1" index="0"]
+
+position = Vector2( 0, -32.3534 )
 shape = SubResource( 8 )
 
-[node name="ElevatorAnim1" parent="." index="13" instance=ExtResource( 4 )]
+[node name="InvisibleWall2" type="StaticBody2D" parent="." index="7"]
 
-visible = false
-position = Vector2( 990.008, 165.339 )
-scale = Vector2( 0.968035, 0.984443 )
-_sections_unfolded = [ "Transform", "Visibility" ]
+position = Vector2( 866.885, 687.172 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
 
-[node name="ElevatorAnim2" parent="." index="14" instance=ExtResource( 4 )]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InvisibleWall2" index="0"]
 
-visible = false
-position = Vector2( 990.008, 324.071 )
-scale = Vector2( 0.968035, 0.976078 )
-_sections_unfolded = [ "Transform", "Visibility" ]
+position = Vector2( 0, -32.3534 )
+shape = SubResource( 8 )
 
-[node name="ElevatorAnim3" parent="." index="15" instance=ExtResource( 4 )]
+[node name="Node2D" type="Node2D" parent="." index="8"]
 
-visible = false
-position = Vector2( 990.008, 485.339 )
-scale = Vector2( 0.968035, 0.984443 )
-_sections_unfolded = [ "Transform", "Visibility" ]
-
-[node name="ElevatorAnim4" parent="." index="16" instance=ExtResource( 4 )]
-
-visible = false
-position = Vector2( 990.008, 640.151 )
-scale = Vector2( 0.968035, 0.959062 )
-_sections_unfolded = [ "Transform", "Visibility" ]
+position = Vector2( 991.564, 652.958 )
+scale = Vector2( 0.0367165, 0.0685902 )
+_sections_unfolded = [ "Transform" ]
 
 
