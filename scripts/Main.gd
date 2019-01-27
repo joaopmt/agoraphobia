@@ -7,7 +7,6 @@ var room_4 = preload("res://scenes/room_4.tscn")
 var room_5 = preload("res://scenes/room_5.tscn")
 var building = preload("res://scenes/building.tscn")
 var elevator_in_anim_load = preload("res://scenes/elevatorInAnim.tscn")
-var elevator_out_anim_load = preload("res://scenes/elevatorOutAnim.tscn")
 
 onready var rooms = get_node("Rooms")
 onready var player = get_node("Player")
@@ -101,7 +100,6 @@ func delete_building():
 	
 #verificar isso
 func load_room(room_key):
-	print("oi")
 	var new_room
 	if room_key == 0:
 		new_room = main_room.instance()
@@ -127,7 +125,6 @@ func delete_room():
 	rooms.remove_child(room)
 	
 func _on_Timer_timeout_1():
-	print("aaaaaaaaaa")
 	timer2 = Timer.new()
 	timer2.set_one_shot(true)
 	timer2.set_wait_time(1)
@@ -139,17 +136,16 @@ func _on_Timer_timeout_1():
 	
 	
 func _on_Timer_timeout_2():
-	print("aaaaaaaaaa")
 	timer3 = Timer.new()
 	timer3.set_one_shot(true)
 	timer3.set_wait_time(0.8)
 	timer3.connect("timeout", self, "_on_Timer_timeout_3")
 	self.add_child(timer3)
 	timer3.start()
-	elevator_out_anim = elevator_out_anim_load.instance()
-	self.add_child(elevator_out_anim)
-	elevator_out_anim.position = Vector2(991.564209, $Player.position.y-10)
-	elevator_out_anim.play("out")
+	#elevator_out_anim = elevator_out_anim_load.instance()
+	#self.add_child(elevator_out_anim)
+	#elevator_out_anim.position = Vector2(991.564209, $Player.position.y-10)
+	#elevator_out_anim.play("out")
 	self.remove_child(timer2)
 	
 	

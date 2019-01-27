@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://sprites/elevator/elevatorInAnim.tres" type="SpriteFrames" id=1]
+
+[node name="elevatorInAnim" type="AnimatedSprite" index="0"]
+
+frames = ExtResource( 1 )
+animation = "in"
+
+

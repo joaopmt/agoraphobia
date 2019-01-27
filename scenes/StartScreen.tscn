@@ -6,7 +6,7 @@
 
 [node name="StartScreen" type="Sprite"]
 
-position = Vector2( 640, 360 )
+position = Vector2( 640, 358.493 )
 texture = ExtResource( 1 )
 script = ExtResource( 2 )
 
