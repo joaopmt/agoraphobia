@@ -1,8 +1,8 @@
 extends Node
 
 var main_room = preload("res://scenes/main_room.tscn")
-var room_2 = preload("res://scenes/room_2.tscn")
-var room_3 = preload("res://scenes/room_3.tscn")
+#var room_2 = preload("res://scenes/room_2.tscn")
+#var room_3 = preload("res://scenes/room_3.tscn")
 var building = preload("res://scenes/building.tscn")
 
 onready var rooms = get_node("Rooms")
@@ -33,7 +33,7 @@ func load_room():
 		new_room = building.instance()
 		rooms.add_child(new_room)
 		print(rooms.get_children()[0])
-		player.apply_scale(Vector2(0.4, 0.36)
+		player.apply_scale(Vector2(0.4, 0.36))
 		player.position = Vector2(278.791748, 449.57843)
 	elif room_key == 1:
 		room_key = 2

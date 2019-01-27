@@ -27,7 +27,7 @@ animations = [ {
 
 custom_solver_bias = 0.0
 radius = 30.0
-height = 150.0
+height = 215.839
 
 [node name="Player" type="KinematicBody2D"]
 
@@ -44,7 +44,7 @@ _sections_unfolded = [ "Transform" ]
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 1 )
 animation = "idle"
-frame = 2
+frame = 1
 playing = true
 _sections_unfolded = [ "Transform" ]
 

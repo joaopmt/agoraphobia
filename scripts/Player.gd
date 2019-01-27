@@ -4,6 +4,8 @@ const MAX_SPEED = 350
 const ACCELERATION = 40
 const FRICTION = 0.2
 const X_AIR_RESISTANCE = 0.05
+const GRAVITY = 10
+const MAX_GRAVITY = 500
 
 var speed = Vector2()
 
@@ -15,6 +17,8 @@ func _ready():
 func _process(delta):
 	# Called every frame. Delta is time since last frame.
 	# Update game logic here.
+	
+	speed.y = min(speed.y+GRAVITY, MAX_GRAVITY)
 	
 	var not_running = false
 	

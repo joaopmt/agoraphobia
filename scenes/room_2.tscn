@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://scripts/MainRoom.gd" type="Script" id=1]
 [ext_resource path="res://sprites/rooms/quarto2-1.jpg" type="Texture" id=2]
@@ -7,9 +7,21 @@
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 69.0917, 166.048 )
+extents = Vector2( 69.0917, 152.818 )
 
-[node name="Room2" type="Node2D" index="0"]
+[sub_resource type="SegmentShape2D" id=2]
+
+custom_solver_bias = 0.0
+a = Vector2( 0, 0 )
+b = Vector2( -1.4836, 498.522 )
+
+[sub_resource type="SegmentShape2D" id=3]
+
+custom_solver_bias = 0.0
+a = Vector2( 0, 0 )
+b = Vector2( 1254.34, -4.66265 )
+
+[node name="MainRoom" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
 
@@ -22,7 +34,7 @@ _sections_unfolded = [ "Offset" ]
 
 [node name="Door" type="Area2D" parent="." index="1"]
 
-position = Vector2( 1095.68, 401.279 )
+position = Vector2( 1096.91, 418.467 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -36,6 +48,57 @@ _sections_unfolded = [ "Collision" ]
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Door" index="0"]
 
 shape = SubResource( 1 )
+
+[node name="InvisibleWall" type="StaticBody2D" parent="." index="2"]
+
+position = Vector2( 25.4848, 107.479 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Material", "Visibility" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InvisibleWall" index="0"]
+
+position = Vector2( 70.0001, 0 )
+shape = SubResource( 2 )
+
+[node name="InvisibleWall2" type="StaticBody2D" parent="." index="3"]
+
+position = Vector2( 1140.24, 126.478 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Material", "Visibility" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InvisibleWall2" index="0"]
+
+position = Vector2( 70.0001, 0 )
+shape = SubResource( 2 )
+
+[node name="Floor" type="StaticBody2D" parent="." index="4"]
+
+position = Vector2( 12.2774, 574.523 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor" index="0"]
+
+position = Vector2( 3.68323, 20.8716 )
+shape = SubResource( 3 )
 
 [connection signal="body_entered" from="Door" to="." method="_on_Door_body_entered"]
 
