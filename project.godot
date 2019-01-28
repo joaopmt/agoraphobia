@@ -12,7 +12,7 @@ config_version=3
 
 config/name="joguinho"
 run/main_scene="res://scenes/StartScreen.tscn"
-config/icon="res://icon.png"
+config/icon="res://sprites/icon/agoraphobia_icon.PNG"
 
 [display]
 
