@@ -13,6 +13,8 @@ onready var rooms = get_node("Rooms")
 onready var player = get_node("Player")
 onready var song = get_node("Song")
 
+const ELEVATOR_ANIM_X = 999
+
 var room_key
 var y_in_building 
 var current_is_building
@@ -34,7 +36,7 @@ func _ready():
 func _process(delta):
 	if current_is_building:
 		if Input.is_action_just_pressed("ui_up"):
-			if 960 < $Player.position.x and $Player.position.x < 1023:
+			if 970 < $Player.position.x and $Player.position.x < 1035:
 				timer1 = Timer.new()
 				timer1.set_one_shot(true)
 				timer1.set_wait_time(1.4)
@@ -44,7 +46,7 @@ func _process(delta):
 				#entra elevador
 				elevator_in_anim = elevator_in_anim_load.instance()
 				self.add_child(elevator_in_anim)
-				elevator_in_anim.position = Vector2(991.564209, $Player.position.y-10)
+				elevator_in_anim.position = Vector2(ELEVATOR_ANIM_X, $Player.position.y-17)
 				elevator_in_anim.play("in")
 				
 				$Player.hide()
@@ -53,7 +55,7 @@ func _process(delta):
 				room_key += 1
 				
 		elif Input.is_action_just_pressed("ui_down"):
-			if 960 < $Player.position.x and $Player.position.x < 1023:
+			if 970 < $Player.position.x and $Player.position.x < 1035:
 				timer1 = Timer.new()
 				timer1.set_one_shot(true)
 				timer1.set_wait_time(1)
@@ -63,7 +65,7 @@ func _process(delta):
 				#entra elevador
 				elevator_in_anim = elevator_in_anim_load.instance()
 				self.add_child(elevator_in_anim)
-				elevator_in_anim.position = Vector2(991.564209, $Player.position.y-10)
+				elevator_in_anim.position = Vector2(ELEVATOR_ANIM_X, $Player.position.y-17)
 				elevator_in_anim.play("in")
 				
 				$Player.hide()
@@ -146,7 +148,7 @@ func _on_Timer_timeout_2():
 	timer3.start()
 	elevator_out_anim = elevator_out_anim_load.instance()
 	self.add_child(elevator_out_anim)
-	elevator_out_anim.position = Vector2(991.564209, $Player.position.y-10)
+	elevator_out_anim.position = Vector2(ELEVATOR_ANIM_X, $Player.position.y-17)
 	elevator_out_anim.play("out")
 	self.remove_child(timer2)
 	

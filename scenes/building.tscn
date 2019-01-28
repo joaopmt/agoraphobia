@@ -20,14 +20,12 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Background" type="Sprite" parent="." index="0"]
 
-position = Vector2( 641.361, 362.99 )
-scale = Vector2( 0.97152, 0.978818 )
+position = Vector2( 640, 360 )
 texture = ExtResource( 1 )
 _sections_unfolded = [ "Offset" ]
 
 [node name="Floor1" type="StaticBody2D" parent="." index="1"]
 
-editor/display_folded = true
 position = Vector2( -8.42173, 712.542 )
 input_pickable = false
 collision_layer = 1
@@ -39,6 +37,8 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor1" index="0"]
 
+position = Vector2( 11.3507, 0.213867 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 1 )
 
 [node name="Floor2" type="StaticBody2D" parent="." index="2"]
@@ -54,12 +54,12 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2" index="0"]
 
-position = Vector2( -0.880211, -2.64081 )
+position = Vector2( 10.4705, -2.42694 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 1 )
 
 [node name="Floor3" type="StaticBody2D" parent="." index="3"]
 
-editor/display_folded = true
 position = Vector2( -5.48345, 400.365 )
 input_pickable = false
 collision_layer = 1
@@ -71,6 +71,8 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor3" index="0"]
 
+position = Vector2( 11.3507, 0.213867 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 1 )
 
 [node name="Floor4" type="StaticBody2D" parent="." index="4"]
@@ -86,6 +88,8 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor4" index="0"]
 
+position = Vector2( 11.3507, 0.213867 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 1 )
 
 [node name="Floor5" type="StaticBody2D" parent="." index="5"]
@@ -101,6 +105,8 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor5" index="0"]
 
+position = Vector2( 11.3507, 0.213867 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 1 )
 
 [node name="InvisibleWall1" type="StaticBody2D" parent="." index="6"]
@@ -116,7 +122,7 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InvisibleWall1" index="0"]
 
-position = Vector2( 0, -32.3534 )
+position = Vector2( 14.0699, -27.172 )
 shape = SubResource( 2 )
 
 [node name="InvisibleWall2" type="StaticBody2D" parent="." index="7"]
@@ -132,7 +138,7 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InvisibleWall2" index="0"]
 
-position = Vector2( 0, -32.3534 )
+position = Vector2( 3.51221, -27.5692 )
 shape = SubResource( 2 )
 
 [node name="Node2D" type="Node2D" parent="." index="8"]
