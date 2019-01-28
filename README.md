@@ -1,4 +1,6 @@
-Agoraphobia - A dialogue based game made in Godot engine for the Global Game Jam 2019
+# Agoraphobia
+
+A dialogue based game made in Godot engine for the Global Game Jam 2019
 
 Credits:
 Programming - André Mota, João Pedro Martins
