@@ -3,5 +3,5 @@ Agoraphobia - A dialogue based game made in Godot engine for the Global Game Jam
 
 Credits:
 Programming - André Mota, João Pedro Martins
-2D Art - Mariane Buglioli
+2D Art and Song - Mariane Buglioli
 Dialogues - Matheus Biscaro
