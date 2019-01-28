@@ -28,4 +28,4 @@ S - PATRICK: Ah, ótimo! Muito obrigado, meu primeiro segundo amigo!
 N - PATRICK: Você é muito maldoso, saía da minha casa!
 [Crise de ansiedade ataca]
 PATRICK: Está tudo bem?
-JOGADOR: Eu preciso ir!
+...: Eu preciso ir!

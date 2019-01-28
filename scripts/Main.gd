@@ -7,9 +7,11 @@ var room_4 = preload("res://scenes/room_4.tscn")
 var room_5 = preload("res://scenes/room_5.tscn")
 var building = preload("res://scenes/building.tscn")
 var elevator_in_anim_load = preload("res://scenes/elevatorInAnim.tscn")
+var elevator_out_anim_load = preload("res://scenes/elevatorOutAnim.tscn")
 
 onready var rooms = get_node("Rooms")
 onready var player = get_node("Player")
+onready var song = get_node("Song")
 
 var room_key
 var y_in_building 
@@ -142,10 +144,10 @@ func _on_Timer_timeout_2():
 	timer3.connect("timeout", self, "_on_Timer_timeout_3")
 	self.add_child(timer3)
 	timer3.start()
-	#elevator_out_anim = elevator_out_anim_load.instance()
-	#self.add_child(elevator_out_anim)
-	#elevator_out_anim.position = Vector2(991.564209, $Player.position.y-10)
-	#elevator_out_anim.play("out")
+	elevator_out_anim = elevator_out_anim_load.instance()
+	self.add_child(elevator_out_anim)
+	elevator_out_anim.position = Vector2(991.564209, $Player.position.y-10)
+	elevator_out_anim.play("out")
 	self.remove_child(timer2)
 	
 	

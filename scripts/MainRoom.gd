@@ -13,4 +13,4 @@ func _on_DialogArea_area_entered(area):
 	var dialog = dialog_and_query_box.get_children()[0]
 	self.add_child(dialog_and_query_box)
 	dialog.filepath = "res://dialogs/1-introducao.txt"
-	self.remove_child(dialog)
+#	self.remove_child($AreaDialog)

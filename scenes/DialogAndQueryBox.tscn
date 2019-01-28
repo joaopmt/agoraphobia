@@ -6,6 +6,7 @@
 
 [node name="DialogAndQueryBox" type="Polygon2D"]
 
+z_index = 1
 polygon = PoolVector2Array( 64, 544, 64, 672, 64, 672, 1216, 672, 1216, 672, 1216, 544, 1216, 544, 64, 544 )
 uv = PoolVector2Array(  )
 color = Color( 0.203125, 0.203125, 0.203125, 1 )
@@ -19,7 +20,7 @@ texture_rotation_degrees = 0.0
 invert_enable = false
 invert_border = 100.0
 script = ExtResource( 1 )
-_sections_unfolded = [ "Visibility" ]
+_sections_unfolded = [ "Transform", "Visibility", "Z Index" ]
 
 [node name="Dialog" type="RichTextLabel" parent="." index="0"]
 

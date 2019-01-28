@@ -2,19 +2,19 @@
 
 [ext_resource path="res://sprites/rooms/predio.jpg" type="Texture" id=1]
 
-[sub_resource type="SegmentShape2D" id=7]
+[sub_resource type="SegmentShape2D" id=1]
 
 custom_solver_bias = 0.0
 a = Vector2( 130.071, -0.31897 )
 b = Vector2( 1128.5, -0.0362549 )
 
-[sub_resource type="SegmentShape2D" id=8]
+[sub_resource type="SegmentShape2D" id=2]
 
 custom_solver_bias = 0.0
 a = Vector2( -0.0844955, 54.7664 )
 b = Vector2( -0.499146, -713.083 )
 
-[node name="Building" type="Node2D"]
+[node name="Building" type="Node2D" index="0"]
 
 _sections_unfolded = [ "Transform" ]
 
@@ -39,7 +39,7 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor1" index="0"]
 
-shape = SubResource( 7 )
+shape = SubResource( 1 )
 
 [node name="Floor2" type="StaticBody2D" parent="." index="2"]
 
@@ -55,7 +55,7 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor2" index="0"]
 
 position = Vector2( -0.880211, -2.64081 )
-shape = SubResource( 7 )
+shape = SubResource( 1 )
 
 [node name="Floor3" type="StaticBody2D" parent="." index="3"]
 
@@ -71,7 +71,7 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor3" index="0"]
 
-shape = SubResource( 7 )
+shape = SubResource( 1 )
 
 [node name="Floor4" type="StaticBody2D" parent="." index="4"]
 
@@ -86,7 +86,7 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor4" index="0"]
 
-shape = SubResource( 7 )
+shape = SubResource( 1 )
 
 [node name="Floor5" type="StaticBody2D" parent="." index="5"]
 
@@ -101,7 +101,7 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Floor5" index="0"]
 
-shape = SubResource( 7 )
+shape = SubResource( 1 )
 
 [node name="InvisibleWall1" type="StaticBody2D" parent="." index="6"]
 
@@ -117,7 +117,7 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InvisibleWall1" index="0"]
 
 position = Vector2( 0, -32.3534 )
-shape = SubResource( 8 )
+shape = SubResource( 2 )
 
 [node name="InvisibleWall2" type="StaticBody2D" parent="." index="7"]
 
@@ -133,7 +133,7 @@ bounce = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InvisibleWall2" index="0"]
 
 position = Vector2( 0, -32.3534 )
-shape = SubResource( 8 )
+shape = SubResource( 2 )
 
 [node name="Node2D" type="Node2D" parent="." index="8"]
 

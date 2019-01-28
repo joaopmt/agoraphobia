@@ -19,7 +19,7 @@ _sections_unfolded = [ "Offset" ]
 
 [node name="AreaDialog" parent="." index="2" instance=ExtResource( 4 )]
 
-position = Vector2( 840, 420 )
+position = Vector2( 789, 419 )
 
 [connection signal="body_entered" from="AreaDialog" to="." method="_on_AreaDialog_body_entered"]
 

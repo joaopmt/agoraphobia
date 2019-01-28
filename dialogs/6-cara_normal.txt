@@ -18,7 +18,7 @@ S - CARA NORMAL: Isso já nos poupa apresentações.
 N - CARA NORMAL: Essa é a Jennifer, meu raio de sol.
 CARA NORMAL: Nos conhecemos na faculdade, eu lembro de vê-la caminhando pelo pátio olhando diretamente para mim...
 CARA NORMAL: ... foi amor a primeira vista. Quando eu contava dos nossos encontros e sobre as suas qualidades meus amigos diziam que ela nem existia de tão perfeita.
-CARA NORMAL: Que? Sim, amor, vou convidá-lo. JOGADOR, você gostaria de ficar para o jantar?
+CARA NORMAL: Que? Sim, amor, vou convidá-lo. Cara, você gostaria de ficar para o jantar?
 =
 S - CARA NORMAL: Ótimo, meu amor irá cozinhar algo maravilhoso para nós.
 N - CARA NORMAL: Ah, que pena. Espero que possamos remarcar para algum outro dia.
