@@ -1,9 +1,4 @@
-do you like dogs?
-=
-S - Nice, thats good to know
-N - Then i dont like you...
-but what about cats?
-=
-S - but cats suck
-N - hmmm ok then
-ill see you later
+teste1
+teste2
+teste3
+fim

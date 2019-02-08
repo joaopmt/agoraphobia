@@ -4,7 +4,7 @@
 [ext_resource path="res://fonts/CaviarDynamicFont.tres" type="DynamicFont" id=2]
 [ext_resource path="res://scripts/Dialog.gd" type="Script" id=3]
 
-[node name="DialogAndQueryBox" type="Polygon2D"]
+[node name="DialogAndQueryBox" type="Polygon2D" index="0"]
 
 z_index = 1
 polygon = PoolVector2Array( 64, 544, 64, 672, 64, 672, 1216, 672, 1216, 672, 1216, 544, 1216, 544, 64, 544 )

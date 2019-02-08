@@ -5,7 +5,7 @@
 [ext_resource path="res://scenes/InvisibleWall.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/AreaDialog.tscn" type="PackedScene" id=4]
 
-[node name="Room5" type="Node2D"]
+[node name="Room5" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
 
@@ -21,6 +21,6 @@ _sections_unfolded = [ "Offset" ]
 
 position = Vector2( 800, 410 )
 
-[connection signal="body_entered" from="AreaDialog" to="." method="_on_AreaDialog_body_entered"]
+[connection signal="body_entered" from="AreaDialog" to="." method="_on_AreaDialog_body_entered" flags=6]
 
 

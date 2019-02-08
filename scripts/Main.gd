@@ -154,7 +154,6 @@ func _on_Timer_timeout_2():
 	
 	
 func _on_Timer_timeout_3():
-	print("aaaaaaaaaa")
 	$Player.show()
 	$Player.set_process(true)
 	self.remove_child(timer3)

@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scripts/room_2.gd" type="Script" id=1]
 [ext_resource path="res://sprites/rooms/quarto2-1.jpg" type="Texture" id=2]
 [ext_resource path="res://scenes/InvisibleWall.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/AreaDialog.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scripts/AreaDialog.gd" type="Script" id=5]
 
 [node name="Room2" type="Node2D"]
 
@@ -20,7 +21,8 @@ _sections_unfolded = [ "Offset" ]
 [node name="AreaDialog" parent="." index="2" instance=ExtResource( 4 )]
 
 position = Vector2( 789, 419 )
+script = ExtResource( 5 )
 
-[connection signal="body_entered" from="AreaDialog" to="." method="_on_AreaDialog_body_entered"]
+[connection signal="body_entered" from="AreaDialog" to="." method="_on_AreaDialog_body_entered" flags=6]
 
 

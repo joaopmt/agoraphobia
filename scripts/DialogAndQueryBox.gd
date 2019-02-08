@@ -7,12 +7,10 @@ var query_box_instance
 onready var dialog = get_node("Dialog")
 
 func _on_Dialog_done():
-	print("done")
 	get_parent().remove_child(self)
 
 
 func _on_Dialog_player_query_signal():
-	pass
 	query_box_instance = query_box.instance()
 	self.add_child(query_box_instance)
 	query_box_instance.connect("yes", self, "on_yes_button_down")
